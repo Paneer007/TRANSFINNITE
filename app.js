@@ -16,31 +16,20 @@ app.get('/',(req,res)=>{
 })
 
 
-
 app.post('/',(req,res)=>{
     let person= '';
     //from the postman
     if(req.query.name){
         person = {
-            name :req.query.name,
-            age: req.query.age,
-            localArea : req.query.localArea,
-            city : req.query.city,
-            state : req.query.state,
-            voterID :req.query.voterID,
-            gender :req.query.gender
+            ...req.query,
+            epicID: undefined,
         }
     }
     //if from the get req
     if(req.body.name){
         person = {
-            name :req.body.name,
-            age: req.body.age,
-            localArea : req.body.localArea,
-            city : req.body.city,
-            state : req.body.state,
-            voterID :req.body.voterID,
-            gender :req.body.gender
+            ...req.body,
+            epicID: undefined,
         }
     }
 
@@ -51,7 +40,7 @@ app.post('/',(req,res)=>{
 
 })
 
-
+app.use('/',)
 //export funciton from login from sanjai
 //input from 
 
