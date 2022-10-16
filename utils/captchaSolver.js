@@ -1,8 +1,7 @@
 const axios = require("axios")
 const captchaSolver = async(resp) =>{
-    
-    //axios
-    //return cap
+    result = await axios.post("flaskserver/captcha")
+    return result
 }
 const captchaSolverApi = async(image_data)=>{
     return new Promise(async(resolve,reject)=>{

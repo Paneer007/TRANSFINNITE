@@ -32,12 +32,12 @@ POST http://localhost:3001/api/state
 Content-Type: application/json
 
 {
-    "stateData": "Tamil Nadu",
+    "stateData": "Goa",
     "ACData": "Lal Bahadur Nagar - 49",
     "PCData": "Malkajgiri",
     "NameData": "Venkat Sai Abhinav Varma Dandu",
     "EpicData": "ZTS7113020",
-    "PartNumber": 10,
+    "PartNumber": 5,
     "SerialNumber": 758,
     "PollingNumber": "Nagarjuna Talent School - 257",
     "ACNumber": 4

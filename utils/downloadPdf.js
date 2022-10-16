@@ -8,7 +8,6 @@ var download_file_wget = function(file_url, download_dir, file_name_to_save, onP
 
     // extract the file name
     var file_name = url.parse(file_url).pathname.split('/').pop();
-
     // excute wget using child_process' spawn function
     var child = spawn('wget', ['--no-check-certificate', '-O', download_dir + file_name_to_save, file_url]);
 

@@ -63,7 +63,6 @@ const SikkimScript =(num = '6', part = '1') =>{
 
 const TamilNaduScript =(num = '40', part = '100') =>{
     num = num.toString(),part=part.toString()
-    
     let siz = num.length
     let adder = ""
     for(let i=0; i<3-siz; i++){
